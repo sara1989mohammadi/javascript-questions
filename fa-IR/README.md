@@ -78,10 +78,9 @@ sayHi();
 
 #### پاسخ: D
 
-Within the function, we first declare the `name` variable with the `var` keyword. This means that the variable gets hoisted (memory space is set up during the creation phase) with the default value of `undefined`, until we actually get to the line where we define the variable. We haven't defined the variable yet on the line where we try to log the `name` variable, so it still holds the value of `undefined`.
+در داخل تابع، ابتدا یک نام متغیر با کلمه تابع `var` ایجاد کردیم. این بدان معناست که این متغیر در مرحله پیکربندی با مقدار تعریف نشده قبل از اجرای کد در حافظه وجود خواهد داشت تا زمانی که دقیقاً به خطی برسیم که در آن مقداری را برای این متغیر تعیین کرده ایم. ما تا خطی هستیم که این متغیر را چاپ می کنیم که هنوز اجرا نشده است و بنابراین هنوز مقدار آن تعریف نشده است.
 
-Variables with the `let` keyword (and `const`) are hoisted, but unlike `var`, don't get <i>initialized</i>. They are not accessible before the line we declare (initialize) them. This is called the "temporal dead zone". When we try to access the variables before they are declared, JavaScript throws a `ReferenceError`.
-
+متغیرهایی که با `let` و `const` استفاده می‌شوند همین کار را می‌کنند، اما تفاوت این است که نمی‌توانیم مقادیری را از آنها بگیریم مگر اینکه در وهله اول به آنها مقادیر اضافه کنیم. به این منطقه مرده موقت می گویند. هنگامی که سعی می کنیم قبل از انجام آن مقدار متغیر را بگیریم، جاوا اسکریپت یک خطا از نوع `ReferenceError` را برمی گرداند.
 </p>
 </details>
 
