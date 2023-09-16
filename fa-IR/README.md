@@ -159,18 +159,18 @@ console.log(shape.perimeter());
 !"Lydia";
 ```
 
-- الف: `1` و `false`
-- ب: `NaN` و `false`
-- ج: `false` و `false`
+- A: `1` و `false`
+- B: `NaN` و `false`
+- C: `false` و `false`
 
 <details><summary><b>پاسخ</b></summary>
 <p>
 
 #### پاسخ: A
 
-The unary plus tries to convert an operand to a number. `true` is `1`, and `false` is `0`.
+عملگر به اضافه یگانه (unary plus) سعی میکند عملوند را به عدد تبدیل کند. مقدار `true` برابر `1` است, و مقدار `false` برابر با `0` است.
 
-The string `'Lydia'` is a truthy value. What we're actually asking, is "is this truthy value falsy?". This returns `false`.
+مقدار رشته `'Lydia'` یک ارزش واقعی است. در واقع پرسش ما, این "این ارزش واقعی نا درست است؟" است. و مقدار `false` را بازگشت میدهد.
 
 </p>
 </details>
