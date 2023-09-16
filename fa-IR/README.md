@@ -224,10 +224,10 @@ c.greeting = "Hello";
 console.log(d.greeting);
 ```
 
-- الف: `Hello`
-- ب: `Hey`
-- ج: `undefined`
-- د: `ReferenceError`
+- A: `Hello`
+- B: `Hey`
+- C: `undefined`
+- D: `ReferenceError`
 - هـ: `TypeError`
 
 <details><summary><b>پاسخ</b></summary>
@@ -235,13 +235,13 @@ console.log(d.greeting);
 
 #### پاسخ: A
 
-In JavaScript, all objects interact by _reference_ when setting them equal to each other.
+در جاوا اسکریپت، همه اشیاء با _ارجاع_ (reference ) به یکدیگر تعامل می کنند.
 
-First, variable `c` holds a value to an object. Later, we assign `d` with the same reference that `c` has to the object.
+ابتدا, متغیر `c` مقدار یک شی را نگه میدارد. بعدا, ما متغیر `d` با آدرس حافظه یکسان با `c` به یک شی را ایجاد میکنیم.
 
 <img src="https://i.imgur.com/ko5k0fs.png" width="200">
 
-When you change one object, you change all of them.
+زمانی که شما یک شی را تغییر میدهید، شما همه مقادیر را تغییر داده اید.
 
 </p>
 </details>
