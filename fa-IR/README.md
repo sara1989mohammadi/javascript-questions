@@ -200,13 +200,13 @@ const mouse = {
 
 #### پاسخ: A
 
-In JavaScript, all object keys are strings (unless it's a Symbol). Even though we might not _type_ them as strings, they are always converted into strings under the hood.
+در جاوااسکریپت, همه کلید های شی از نوع رشته هستند (مگر اینکه Symbol باشند). حتی اگر ما _نوع_ آنها را به عنوان رشته وارد نکنیم, آنها تبدیل به رشته میشوند.
 
-JavaScript interprets (or unboxes) statements. When we use bracket notation, it sees the first opening bracket `[` and keeps going until it finds the closing bracket `]`. Only then, it will evaluate the statement.
+با توجه به اینکه جاوااسکریپت کد ها را تفسیر میکند. زمانی که ما از نماد براکت استفاده میکنیم, و اولین براکت باز رو میبینه `[` به تفسیر مابقی کد ها ادامه میدهد تا زمانی که براکت بشه `]` را پیدا کند. فقط در این زمان است, دستور را ارزیابی میکند.
 
-`mouse[bird.size]`: First it evaluates `bird.size`, which is `"small"`. `mouse["small"]` returns `true`
+`mouse[bird.size]`: ابتدا مقدار `bird.size` را ارزیابی میکند, که دارای مقدار `"small"` است. `mouse["small"]` مقدار `true` را بازگشت میدهد.
 
-However, with dot notation, this doesn't happen. `mouse` does not have a key called `bird`, which means that `mouse.bird` is `undefined`. Then, we ask for the `size` using dot notation: `mouse.bird.size`. Since `mouse.bird` is `undefined`, we're actually asking `undefined.size`. This isn't valid, and will throw an error similar to `Cannot read property "size" of undefined`.
+با این حال با علامت نقطه, این اتفاق نمیوفتد. شی `mouse` هیچ مقداری با کلید `bird` ندارد, که به این معتی است مقدار `mouse.bird` برار `undefined` است. سپس, ما مقدار `size` را درخواست میکنیم با استفاده از نقطه: `mouse.bird.size`. در حالیه که مقدار `mouse.bird` برابر `undefined` است, در واقع ما درخواست میکنیم `undefined.size`. این مقدار نا معتبر است, و یک خطا مشابه `Cannot read property "size" of undefined` ایجاد خواهد شد.
 
 </p>
 </details>
