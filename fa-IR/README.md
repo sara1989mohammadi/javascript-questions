@@ -11,17 +11,16 @@
 از مقدماتی تا پیشرفته: خود را در جاوا اسکریپت آزمایش کنید، چیزهایی را که فراموش کرده اید به خاطر بسپارید یا خود را برای یک مصاحبه شغلی آینده آماده کنید! :muscle: :rocket: من این ریپازیتوری را به طور مرتب با سوالات جدید به روز می کنم.
 پاسخ ها در قسمت مخفی زیر است، کافی است روی سوال کلیک کنید تا جزئیات آن باز شود.این فقط برای سرگرمی است، موفق باشید! :heart:</span>
 
-Feel free to reach out to me! 😊 <br />
+با خیال راحت با من تماس بگیرید! 😊 <br />
 <a href="https://www.instagram.com/theavocoder">Instagram</a> || <a href="https://www.twitter.com/lydiahallie">Twitter</a> || <a href="https://www.linkedin.com/in/lydia-hallie">LinkedIn</a> || <a href="https://www.lydiahallie.dev">Blog</a>
-
 </div>
 
-| Feel free to use them in a project! 😃 I would _really_ appreciate a reference to this repo, I create the questions and explanations (yes I'm sad lol) and the community helps me so much to maintain and improve it! 💪🏼 Thank you and have fun! |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+با خیال راحت از آنها در یک پروژه استفاده کنید! 😃  من _واقعا_ قدردان ارجاع به این مخزن هستم, من سوالات و جواب آنها را ساختم و جامعه به من کمک زیادی کرد که آن را حفظ و بهتر کنم! 💪🏼 با تشکر لذت ببرید!   |
+|------------------------------------------|
 
 ---
 
-<details><summary><b> See 20 Available Translations 🇸🇦🇪🇬🇧🇦🇩🇪🇪🇸🇫🇷🇮🇩🇯🇵🇰🇷🇳🇱🇧🇷🇷🇺🇹🇭🇹🇷🇺🇦🇻🇳🇨🇳🇹🇼🇽🇰</b></summary>
+<details><summary><b> See 21 Available Translations 🇸🇦🇪🇬🇧🇦🇩🇪🇪🇸🇫🇷🇮🇩🇯🇵🇰🇷🇳🇱🇧🇷🇷🇺🇹🇭🇹🇷🇺🇦🇻🇳🇨🇳🇹🇼🇽🇰</b></summary>
 <p>
 
 - [🇸🇦 العربية](./ar-AR/README_AR.md)
@@ -45,6 +44,7 @@ Feel free to reach out to me! 😊 <br />
 - [🇻🇳 Tiếng Việt](./vi-VI/README-vi.md)
 - [🇨🇳 简体中文](./zh-CN/README-zh_CN.md)
 - [🇹🇼 繁體中文](./zh-TW/README_zh-TW.md)
+- [fa پارسی](./fa-IR/README.md)
 
 </p>
 </details>
@@ -68,10 +68,10 @@ sayHi();
 
 </div>
 
-- الف: `Lydia` و `undefined`
-- ب: `Lydia` و `ReferenceError`
-- ج: `ReferenceError` و `21`
-- د: `undefined` و `ReferenceError`
+- A: `Lydia` و `undefined`
+- B: `Lydia` و `ReferenceError`
+- C: `ReferenceError` و `21`
+- D: `undefined` و `ReferenceError`
 
 <details><summary><b>پاسخ</b></summary>
 <p>
@@ -98,18 +98,18 @@ for (let i = 0; i < 3; i++) {
 }
 ```
 
-- الف: `0 1 2` و `0 1 2`
-- ب: `0 1 2` و `3 3 3`
-- ج: `3 3 3` و `0 1 2`
+- A: `0 1 2` و `0 1 2`
+- B: `0 1 2` و `3 3 3`
+- C: `3 3 3` و `0 1 2`
 
 <details><summary><b>پاسخ</b></summary>
 <p>
 
 #### پاسخ: C
 
-Because of the event queue in JavaScript, the `setTimeout` callback function is called _after_ the loop has been executed. Since the variable `i` in the first loop was declared using the `var` keyword, this value was global. During the loop, we incremented the value of `i` by `1` each time, using the unary operator `++`. By the time the `setTimeout` callback function was invoked, `i` was equal to `3` in the first example.
+بخاطر اینکه در صف رویداد های جاوااسکریپت, در `setTimeout` توابع بازگشتی (callback function) _بعد_ از اجرای حلقه اجرا میشوند. از آنجا که متغیر `i` در اولین حلقه با کلمه کلیدی `var` ایجاد میشود, این مقدار به صورت عمومی (global) میباشد. در طول اجرای حلقه, ما مقدار متغیر `i` را هر بار `1` مقدار افزایش میدهیم, با استفاده از عملگر `++`. تا زمانی که تابع بازگشتی با استفاده از `setTimeout` فراخوانی میشود, `i` مقدار برابر `3` سه میشود در مثال اولی.
 
-In the second loop, the variable `i` was declared using the `let` keyword: variables declared with the `let` (and `const`) keyword are block-scoped (a block is anything between `{ }`). During each iteration, `i` will have a new value, and each value is scoped inside the loop.
+در مثال دومی, متغیر `i` با استفاده از کلمه کلیدی `let` ایجاد میشود: متغیر های ایجاد شده با کلمه کلیدی `let` (و `const`) از نوع حوزه بلاک (block-scoped) میباشند (منظور از بلاک هر چیزی بین `{ }` میباشد). در طول هر تکرار, متغیر `i` مقدار جدید خواهد داشت, و هر مقدار فقط در حلقه خود قرار دارد.
 
 </p>
 </details>
@@ -131,10 +131,10 @@ console.log(shape.diameter());
 console.log(shape.perimeter());
 ```
 
-- الف: `20` و `62.83185307179586`
-- ب: `20` و `NaN`
-- ج: `20` و `63`
-- د: `NaN` و `63`
+- A: `20` و `62.83185307179586`
+- B: `20` و `NaN`
+- C: `20` و `63`
+- D: `NaN` و `63`
 
 <details><summary><b>پاسخ</b></summary>
 <p>
